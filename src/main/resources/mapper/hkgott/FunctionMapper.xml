@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.aisat.hkgott.mapper.FunctionMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.aisat.hkgott.entity.Function">
+        <id column="function_id" property="functionId" />
+        <result column="function_no" property="functionNo" />
+        <result column="function_name" property="functionName" />
+        <result column="function_name_en" property="functionNameEn" />
+        <result column="function_abbr" property="functionAbbr" />
+        <result column="description" property="description" />
+        <result column="function_link" property="functionLink" />
+        <result column="level" property="level" />
+        <result column="up_function_no" property="upFunctionNo" />
+        <result column="is_valid" property="isValid" />
+        <result column="display_order" property="displayOrder" />
+        <result column="function_icon" property="functionIcon" />
+        <result column="access_paths" property="accessPaths" />
+        <result column="show_no" property="showNo" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        function_id, function_no, function_name, function_name_en, function_abbr, description, function_link, level, up_function_no, is_valid, display_order, function_icon, access_paths, show_no
+    </sql>
+
+</mapper>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.aisat.hkgott.mapper.UserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.aisat.hkgott.entity.User">
+        <id column="user_id" property="userId" />
+        <result column="name" property="name" />
+        <result column="user_name" property="userName" />
+        <result column="password" property="password" />
+        <result column="email" property="email" />
+        <result column="phone" property="phone" />
+        <result column="is_admin" property="isAdmin" />
+        <result column="area_code" property="areaCode" />
+        <result column="login_count" property="loginCount" />
+        <result column="last_time" property="lastTime" />
+        <result column="create_time" property="createTime" />
+        <result column="operator_id" property="operatorId" />
+        <result column="address" property="address" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        user_id, name, user_name, password, email, phone, is_admin, area_code, login_count, last_time, create_time, operator_id, address
+    </sql>
+
+</mapper>
